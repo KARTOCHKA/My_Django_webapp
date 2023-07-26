@@ -1,0 +1,20 @@
+<!-- calculator_app/templates/home.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'calculator.css' %}">
+</head>
+<body>
+    <div class="chat-container">
+        <h1>Welcome to Our Website!</h1>
+        <a href="{% url 'calculator' %}" class="chat-button">Calculator</a>
+        <a href="{% url 'chat_with_gpt' %}" class="chat-button">Chat with ChatGPT</a>
+    </div>
+    <div class="top-right-buttons">
+        <a href="{% url 'register' %}" class="small-button">Register</a>
+        <a href="{% url 'login' %}" class="small-button">Log in</a>
+    </div>
+</body>
+</html>

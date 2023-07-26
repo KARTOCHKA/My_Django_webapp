@@ -1,0 +1,89 @@
+/* calculator.css */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* Container for the calculator */
+.chat-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Container for each chat message */
+.message-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+/* Styles for user's message */
+.user-message {
+    text-align: right;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 10px 10px 0 10px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+/* Styles for GPT's response message */
+.gpt-message {
+    text-align: left;
+    background-color: #f1f1f1;
+    border-radius: 10px 10px 10px 0;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+/* Input field for the chat message */
+.chat-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Send button for the chat message */
+.send-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Styles for the home page buttons */
+.chat-button {
+    display: block;
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 30px;
+    margin: 20px auto;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Styles for the top-right corner buttons */
+.small-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+

@@ -1,0 +1,29 @@
+<!-- calculator_app/templates/chat_with_gpt.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat with ChatGPT</title>
+    <link rel="stylesheet" href="{% static 'calculator.css' %}">
+</head>
+<body>
+    <div class="chat-container">
+        {% if user_input %}
+            <div class="message-container">
+                <div class="user-message">
+                    {{ user_input }}
+                </div>
+                <div class="gpt-message">
+                    {{ gpt_response }}
+                </div>
+            </div>
+        {% endif %}
+
+        <form method="POST">
+            {% csrf_token %}
+            <input type="text" name="user_input" class="chat-input" required>
+            <button type="submit" class="send-button">Send</button>
+        </form>
+    </div>
+</body>
+</html>

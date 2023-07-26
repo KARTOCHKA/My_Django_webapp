@@ -1,0 +1,26 @@
+<!-- calculator_app/templates/register.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="{% static 'calculator.css' %}">
+</head>
+<body>
+    <div class="chat-container">
+        <form method="POST">
+            {% csrf_token %}
+            <label for="username">Username:</label>
+            <input type="text" name="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" required>
+            <br>
+            <label for="api_key">API Key:</label>
+            <input type="text" name="api_key" required>
+            <br>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>

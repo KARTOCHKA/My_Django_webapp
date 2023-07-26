@@ -1,0 +1,39 @@
+<!-- calculator_app/templates/calculator.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="{% static 'calculator.css' %}">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="message-container">
+            {% if result %}
+            <div class="user-message">
+                Result: {{ result }}
+            </div>
+            {% endif %}
+        </div>
+
+        <form method="POST">
+            {% csrf_token %}
+            <label for="num1">Number 1:</label>
+            <input type="number" name="num1" required>
+            <br>
+            <label for="operator">Operator:</label>
+            <select name="operator" required>
+                <option value="add">+</option>
+                <option value="subtract">-</option>
+                <option value="multiply">*</option>
+                <option value="divide">/</option>
+            </select>
+            <br>
+            <label for="num2">Number 2:</label>
+            <input type="number" name="num2" required>
+            <br>
+            <input type="submit" value="Calculate">
+        </form>
+    </div>
+</body>
+</html>
